@@ -1,6 +1,8 @@
 FROM brentp/musl-hts-nim:latest
 
 # for nextflow
+RUN ["/bin/bash", "-c", "echo I am now using bash!"]
+
 RUN apk add bash procps
 
 RUN cd / &&   \
